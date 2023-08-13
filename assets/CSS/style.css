@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+  background: #fff;
+  font-size: 15px;
+  line-height: 2em;
+  color: #333;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 20px !important;
+  line-height: 1.8em !important;
+  font-weight: 700;
+}
+
+.column-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.left-col-block {
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+}
+
+.right-col-block {
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+
+.header {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden; /* To ensure the gradient doesn't overflow */
+
+  /* Updated gradient definition using ::before pseudo-element */
+  background-image: linear-gradient(-30deg, red 0%, yellow 20%, transparent 20%, transparent 100%);
+}
+
+.header .profile-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("C:/Users/HP/Desktop/BootStrap/Portpolio/assets/image/2.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Additional styles for the gradient overlay using ::before pseudo-element */
+.header .profile-image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-40deg, rgba(122, 105, 180, 0.8) 0%, rgba(151, 151, 98, 0.8) 20%, transparent 20%, transparent 100%);
+}
+
+.section-wraper {
+  padding: 50px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px;
+  color: red !important;
+}
+
+.section-title {
+  margin-bottom: 15px;
+}
+
+.section-title h2 {
+  color: #4b4850 !important;
+}
+
+.grey-bg {
+  background-color: #999;
+}
+
+.header .content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10%;
+}
+
+.header .content h1 {
+  font-size: 36px;
+  color: #fff;
+  line-height: 1;
+  margin: 0;
+}
+
+.header .content p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.header .content .social-icon {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.header .content .social-icon li {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.header .content .social-icon li a {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+
+.header .content .social-icon li a:hover {
+  color: hsl(4, 95%, 48%);
+}
+
+.expertisse-item {
+  margin-bottom: 20px;
+}
+
+.expertisse-item h3 {
+  margin-bottom: 5px;
+}
+
+.accordion-button {
+  width: 100%;
+}
+
+a:hover {
+  color: #ecece9 !important;
+}
+
+.btn {
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 0;
+  border: 0;
+  text-transform: uppercase !important;
+}
+
+.btn-primary {
+  color: rgb(238, 238, 241) !important;
+  background: blue !important;
+}
+
+@media (max-width: 600px) {
+  .left-col-block {
+    width: 100%;
+    position: absolute;
+  }
+  .right-col-block {
+    width: 100%;
+  }
+}
